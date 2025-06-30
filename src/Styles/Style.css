@@ -10,18 +10,117 @@ h1, h2 {
   color: #222;
 }
 
-.container {
-  text-align: center;
-  margin-top: 100px;
-}
-
 .button {
   margin-top: 30px;
   padding: 12px 24px;
   font-size: 18px;
   border-radius: 8px;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #008080;
+  color: black;
   border: none;
   cursor: pointer;
 }
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  font-family: 'Noto Sans Gujarati', sans-serif;
+  text-align: center;
+}
+
+.wordle-input {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 300px;
+  font-family: 'Noto Sans Gujarati', sans-serif;
+}
+
+.input-buttons {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.keyboard {
+  margin-bottom: 2rem;
+}
+.keyboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  max-width: 500px;
+  margin: auto;
+}
+
+.key-button {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  font-family: 'Noto Sans Gujarati', sans-serif;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.guesses {
+  margin-top: 2rem;
+}
+
+.guess-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.guess-box {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Noto Sans Gujarati', sans-serif;
+  border-radius: 4px;
+  color: white;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: gold;
+}
+
+.grey {
+  background-color: lightgrey;
+  color: darkgrey;
+}
+
+
+.keyboard-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.keyboard-column {
+  flex: 1;
+  min-width: 200px;
+  
+}
+
+.keyboard-grid-co {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto ; /* Adjust to 8 or 9 for fewer rows */
+  gap: 4px;
+}
+.keyboard-grid-vo {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto  ; /* Adjust to 8 or 9 for fewer rows */
+  gap: 4px;
+}
+

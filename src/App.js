@@ -1,14 +1,14 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import WelcomePage from "./Components/WelcomePage";
-import WordleGame from "./Components/WordleGame";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import WordleGame from './Components/WordleGame'
+import HomePage from './Components/WelcomePage';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<WelcomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/wordle" element={<WordleGame />} />
+        
       </Routes>
     </Router>
   );
